@@ -1,0 +1,35 @@
+h1, h2{
+    text-transform: uppercase;
+}
+
+.menu {
+    list-style: none ;
+    width: 100%;
+    background-color: rgba(0, 48, 73, 1);
+    position: fixed;
+}
+
+.menu ul{
+    padding: 1em;
+    text-align: right ;
+}
+
+.menu li{
+    display: inline;
+}
+
+.menu ul li:not(:last-child):after {
+    content: "|";
+    padding: 1em;
+}
+
+.competences ul:before{
+    content:attr(aria-label);
+    font-size:120%;
+    font-weight:bold;
+}
+
+.competences ul{
+    list-style-type: circle;
+    padding-inline-start: 40px;
+}

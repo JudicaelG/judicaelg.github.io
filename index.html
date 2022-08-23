@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        embed: '#003049',
+                        'embed-text': '#EAE2B7',
+                        'maximum-red': '#D62828',
+                    },
+                    height:{
+                        '180': '40rem'
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Judicaël Guillaume</title>
+</head>
+<body>
+<div class="w-full bg-embed-text text-embed-text">
+    <nav class="menu">
+        <ul>
+            <li><a href="#Accueil">Accueil</a></li>
+            <li><a href="#Apropos">À propos</a></li>
+            <li><a href="#Projets">Projets</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="grid grid-cols-2 bg-embed">
+        <div class="flex flex-col justify-center items-center">
+            <div class="inline-flex mb-6">
+                <a href="https://github.com/JudicaelG" class="rounded-full border-maximum-red mr-4" target="_blank">
+                    <img src="images/GitHub-Mark-32px.png" alt="github" class="">
+                </a>
+                <a href="https://www.linkedin.com/in/judicael-guillaume/" class="rounded-full border-maximum-red" target="_blank">
+                    <img src="images/LI-In-Bug.png" alt="linkedin" class="w-8">
+                </a>
+            </div>
+            <h1 class="text-3xl font-bold mb-6">Je suis Judicaël Guillaume</h1>
+            <article>
+                Je suis dévellopeur full-stack sur le CMS Wordpress et le framework Laravel.
+            </article>
+        </div>
+        <div class="flex justify-center items-center">
+            <img src="images/profil.jpg" alt="me" class="rounded-full h-3/6">
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#003049" fill-opacity="1" d="M0,96L48,106.7C96,117,192,139,288,170.7C384,203,480,245,576,245.3C672,245,768,203,864,160C960,117,1056,75,1152,74.7C1248,75,1344,117,1392,138.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+    </svg>
+</div>
+<div class="bg-embed-text py-6 h-180" id="Apropos">
+    <div class="grid grid-cols-2 gap-6 pt-6">
+        <section>
+            <h2 class="text-embed text-3xl font-bold mb-6 text-center">Á propos</h2>
+            <p class="p-6">
+                Passionné par le développement et notamment par le web, j’ai réalisé et intégré quelques applications web/API pour des SSII et des start up (Actemium, NextDay.Vision, Kardham-Digital,…)
+            </p>
+            <p class="p-6">
+                Mon expertise :
+                <ul class="pl-6">
+                    <li>
+                        Développement back-end (PHP, Symfony, Laravel, wordpress)
+                    </li>
+                    <li>
+                        Gestion de code (Github/Gitlab)
+                    </li>
+                    <li>
+                        Base de données (Mysql, SQL server)
+                    </li>
+                    <li>
+                        Formation wordpress
+                    </li>
+                </ul>
+            </p>
+        </section>
+        <section class="competences">
+            <h2 class="text-embed text-3xl font-bold mb-6 text-center">Compétences</h2>
+            <div class="grid grid-cols-2">
+                <ul aria-label="Langages">
+                    <li>PHP</li>
+                    <li>Javascript</li>
+                    <li>C#</li>
+                </ul>
+                <ul aria-label="Framework">
+                    <li>Laravel</li>
+                    <li>Symfony</li>
+                </ul>
+                <ul aria-label="Framework CSS">
+                    <li>Bootstrap</li>
+                    <li>TailWind</li>
+                </ul>
+                <ul aria-label="CMS">
+                    <li>Wordpress</li>
+                </ul>
+                <ul aria-label="Database">
+                    <li>Mysql</li>
+                    <li>PostGreSql</li>
+                    <li>SqlServer</li>
+                </ul>
+                <ul aria-label="Versionning">
+                    <li>Git</li>
+                    <li>Github</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="bg-embed text-embed-text pt-6" id="Projets">
+    <h2 class="text-embed-text text-3xl font-bold mb-6 text-center">Projets</h2>
+    <div class="grid grid-cols-4 gap-6 mx-6">
+        <div class="flex flex-col bg-embed-text text-embed mb-6 transform transition-all hover:scale-105">
+            <img src="images/2p1g.png" class=" object-cover h-40">
+            <h3 class="py-3 px-3">2 Players 1 Game</h3>
+            <p class="py-3 px-3">Création d'un réseau social sur worpress à l'aide du plugin buddypress autour du jeu vidéo. Les utilisateurs ont accès à
+                l'édition de leur profil
+                de joueur qui contient les informations de jeux auquel ils jouent, le pseudo, leurs jeux du moment.
+                L'équipe pourra aussi créer différents articles autour du jeux-vidéos.</p>
+        </div>
+        <div class="flex flex-col bg-embed-text text-embed mb-6 transform transition-all hover:scale-105">
+            <img src="images/engees.jpg" class=" object-contain h-40">
+            <h3 class="py-3 px-3">ENGEES</h3>
+            <p class="py-3 px-3">Développement de deux modules complémentaires en python pour le logiciel TSMO - Un module graphique afin de pouvoir afficher
+                les résultats graphiquement pour plus de lisibilité et un module de prospective financière.</p>
+        </div>
+        <div class="flex flex-col bg-embed-text text-embed mb-6 transform transition-all hover:scale-105">
+            <img src="images/nextday.vision.jpg" class="object-contain h-40">
+            <h3 class="py-3 px-3">NextDay.Vision</h3>
+            <p class="py-3 px-3">Développement de deux modules pour OTPOne API :
+
+                Développement du panel de management d’application pour les développeurs.
+
+                Développement d’un serveur radius sous forme de service windows qui utilise l’API OTPONE.</p>
+        </div>
+        <div class="flex flex-col bg-embed-text text-embed mb-6 transform transition-all hover:scale-105">
+            <img src="images/kardhamdigital.png" class=" object-cover h-40">
+            <h3 class="py-3 px-3">Kardham-Digital</h3>
+            <p class="py-3 px-3">
+                Développement d'un helpdesk sur une application de gestion de smartbuilding :
+                Veille technologique effectué pour observer le workflow des help desk
+                Définitions des différents besoins de l’helpdesk (création d'un ticket, assignement d'un ticket, gestion
+                des types d'incidents, gestion des types de priorité d'un ticket, affichage de différents rapports de
+                gestion du helpdesk)
+            </p>
+        </div>
+    </div>
+</div>
+<div class="bg-embed-text text-embed" id="Contact">
+    <div class="py-6 px-6">
+        <p class="text-center text-xl font-bold">Vous avez une idée de projet, un site vitrine, e-commerce ou même une application web.
+            Parlons-en, peut-être une future collaboration !</p>
+        <div class="flex justify-center items-center my-6">
+            <p class="text-lg font-bold">Me contacter : </p>
+            <a href="https://www.linkedin.com/in/judicael-guillaume/" class="rounded-full border-maximum-red" target="_blank">
+                <img src="images/LI-In-Bug.png" alt="linkedin" class="w-8">
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
